@@ -385,7 +385,7 @@ ExternalProject_Add(zookeeper
   URL_MD5 d85f9751724d3f20f792803b61c4db24
   PATCH_COMMAND ${CMAKE_COMMAND} -E copy_directory ${GraphLab_SOURCE_DIR}/patches/zookeeper/ <SOURCE_DIR>
   BUILD_IN_SOURCE 1
-  CONFIGURE_COMMAND ./configure --prefix=<INSTALL_DIR> --disable-shared
+  CONFIGURE_COMMAND CFLAGS=-Wno-error=nonnull ./configure --prefix=<INSTALL_DIR> --disable-shared
   INSTALL_DIR ${GraphLab_SOURCE_DIR}/deps/local)
 
 ## =============================================================
