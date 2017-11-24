@@ -1,3 +1,16 @@
+# Fork of PowerGraph for building GossipMap
+
+This fork of PowerGraph contains fixed URLs and compiler flags that are necessary to build GossipMap in November 2017 using GCC 7.2 (they might or might not work tomorrow as the build depends on file downloads that might become unavailable at any time).
+Further, for your convenience, GossipMap is directly embedded as a git submodule.
+To build GossipMap execute the following commands:
+
+```
+git submodule update --init --recursive
+./configure
+cd release/apps/GossipMap
+make -j4
+```
+
 # GraphLab PowerGraph v2.2
 
 ## UPDATE: For a signficant evolution of this codebase, see GraphLab Create which is available for download at [turi.com](https://turi.com)
