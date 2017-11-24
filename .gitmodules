@@ -1,0 +1,3 @@
+[submodule "apps/GossipMap"]
+	path = apps/GossipMap
+	url = https://github.com/uwescience/GossipMap.git
